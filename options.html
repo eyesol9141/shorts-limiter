@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Shorts Limiter 설정</title>
+  <style>
+    body { font-family: sans-serif; width: 300px; padding: 16px; }
+    h2 { font-size: 18px; margin-bottom: 12px; }
+    input[type="range"] { width: 100%; }
+    button { margin-top: 12px; padding: 4px 12px; }
+  </style>
+</head>
+<body>
+  <h2>setting today shorts limit</h2>
+  <input type="range" id="countSlider" min="1" max="25" value="10">
+  <div style="margin-top: 8px;"><span id="countValue">10</span></div>
+  <button id="confirmBtn">accept</button>
+
+  <script src="option.js"></script>
+</body>
+</html>

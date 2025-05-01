@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Shorts Limiter",
+  "version": "1.48",
+  "description": "뇌와 시간을 녹이고 있는 현대인들을 위해 하루에 보는 유튜브 쇼츠 개수를 제한합니다.",
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png"
+    },  
+    "default_popup": "options.html"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
